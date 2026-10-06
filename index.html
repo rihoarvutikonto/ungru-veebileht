@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ungru Restauraator OÜ – restaureerimis- ja ehitustööd Hiiumaal</title>
+<meta name="description" content="OÜ Ungru Restauraator teeb rekonstrueerimis- ja restaureerimistöid, uusehitusi ja remonttöid ning pakub uuringuid, konsultatsioone ja järelvalvet. Suuremõisa, Hiiumaa.">
+<meta name="theme-color" content="#2f2a24">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2032%2032%27%3E%3Crect%20width=%2732%27%20height=%2732%27%20rx=%276%27%20fill=%27%232f2a24%27/%3E%3Ctext%20x=%2716%27%20y=%2722%27%20font-family=%27Georgia%27%20font-size=%2718%27%20fill=%27%23f4efe6%27%20text-anchor=%27middle%27%3EU%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f2eb;--paper:#fffdf9;--ink:#24211d;--muted:#5b544b;--line:#e3dbcf;--accent:#7a4e22;--accent-d:#5f3b17;--dark:#2f2a24}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent)}
+a:hover{color:var(--accent-d)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.2;margin:0 0 .6em}
+h2{font-size:clamp(1.75rem,3.5vw,2.4rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--paper);padding:.5rem 1rem;z-index:99}
+.skip:focus{left:1rem}
+header{position:sticky;top:0;z-index:20;background:rgba(246,242,235,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
+.brand{font-family:Georgia,serif;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
+nav a{color:var(--ink);text-decoration:none;font-size:.98rem}
+nav a:hover{color:var(--accent)}
+.call{display:inline-flex;align-items:center;min-height:44px;padding:.55rem 1.1rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;white-space:nowrap}
+.call:hover{background:var(--accent-d);color:#fff}
+.hero{position:relative;color:#fff;background:#3a332a url(img/hero.jpg) center/cover no-repeat;min-height:min(78vh,640px);display:flex;align-items:flex-end}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,16,12,.72) 0%,rgba(20,16,12,.45) 55%,rgba(20,16,12,.1) 100%),linear-gradient(180deg,rgba(20,16,12,0) 40%,rgba(20,16,12,.55) 100%)}
+.hero .wrap{position:relative;padding:5rem 0 3.5rem}
+.hero h1{font-size:clamp(2.3rem,6vw,4rem);max-width:16ch;margin-bottom:.4em}
+.hero p{font-size:clamp(1.05rem,2vw,1.25rem);max-width:38rem;color:#f3ede4}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none}
+.btn-p{background:#fff;color:var(--dark)}
+.btn-p:hover{background:#efe7da;color:var(--dark)}
+.btn-o{border:2px solid #fff;color:#fff}
+.btn-o:hover{background:rgba(255,255,255,.12);color:#fff}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+.lead{font-size:1.15rem;color:var(--muted);max-width:44rem}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.6rem}
+.panel h3{margin-bottom:.8em}
+.mat{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+.mat li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.3rem .8rem;font-size:.95rem}
+.alt{background:var(--paper);border-block:1px solid var(--line)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.svc{background:var(--bg);border-radius:14px;padding:1.6rem;border-top:4px solid var(--accent)}
+.svc p{margin:0;color:var(--muted)}
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+.work{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.work>img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.work-b{padding:1.1rem 1.2rem 1.2rem}
+.work-b h3{margin:0 0 .4em}
+details summary{cursor:pointer;color:var(--accent);font-weight:600;min-height:44px;display:flex;align-items:center;list-style-position:inside}
+details[open] summary{margin-bottom:.5rem}
+details p{color:var(--muted);font-size:.98rem}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2rem}
+.contact .panel p{margin:.2rem 0}
+.big{font-size:1.3rem;font-weight:600}
+.big a{text-decoration:none}
+.partner{margin-top:1.4rem;color:var(--muted)}
+footer{background:var(--dark);color:#e9e2d6;padding:2rem 0;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer a{color:#fff}
+.mobile-call{display:none}
+@media (max-width:900px){.services,.works{grid-template-columns:repeat(2,1fr)}.two,.contact{grid-template-columns:1fr}}
+@media (max-width:720px){nav{display:none}.nav .call{display:none}
+ .mobile-call{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:.5rem;padding:.6rem;padding-bottom:max(.6rem,env(safe-area-inset-bottom));background:var(--dark)}
+ .mobile-call a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:600;text-decoration:none;color:#fff;background:var(--accent)}
+ .mobile-call a+a{background:#4a4238}
+ body{padding-bottom:72px}}
+@media (max-width:560px){.services,.works{grid-template-columns:1fr}.hero{min-height:520px}.hero .wrap{padding:4rem 0 2.5rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#sisu">Liigu sisu juurde</a>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#">Ungru Restauraator</a>
+  <nav aria-label="Peamenüü"><ul>
+   <li><a href="#firmast">Firmast</a></li>
+   <li><a href="#tegevusalad">Tegevusalad</a></li>
+   <li><a href="#tood">Tehtud tööd</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+  </ul></nav>
+  <a class="call" href="tel:+3725176135">+372 517 6135</a>
+ </div>
+</header>
+
+<main id="sisu">
+ <section class="hero" aria-label="Sissejuhatus">
+  <div class="wrap">
+   <h1>Ungru Restauraator</h1>
+   <p>Rekonstrueerimis- ja restaureerimistööd, uusehitused ja remont. Vanad, end õigustanud ehitusvõtted ja looduslikud materjalid. Suuremõisa, Hiiumaa.</p>
+   <div class="btns">
+    <a class="btn btn-p" href="#kontakt">Võta ühendust</a>
+    <a class="btn btn-o" href="#tood">Vaata tehtud töid</a>
+   </div>
+  </div>
+ </section>
+
+ <section id="firmast">
+  <div class="wrap two">
+   <div>
+    <h2>Firmast</h2>
+    <p class="lead">OÜ Ungru Restauraator töökollektiivi moodustavad põhiliselt töötajad, kes alustasid tööd aastatel 1985–1987 firmas Eesti Restauraator.</p>
+    <p>Oskusi on omandatud Soomes, Rootsis, Venemaal ja Hispaanias. Firmat juhib spetsialist, kes on kolmkümmend aastat tegelnud ehitusega ning kellel on ka objektil töötamise kogemus.</p>
+    <p>Objekt valmib arhitekti, tellija ja töödeteostaja koostöö tulemusena. Eelarve on alati piiratud, tähtis on kvaliteet!</p>
+   </div>
+   <div class="panel">
+    <h3>Materjalid, mida kasutame</h3>
+    <p>Tänapäevaste ehituslahenduste kõrval kasutame ka vanu ehitusvõtteid ning looduslikke ja keskkonnasõbralikke materjale.</p>
+    <ul class="mat">
+     <li>Linaõli</li><li>Tärpentiinõli</li><li>Puutõrv</li><li>Mesilasvaha</li><li>Lubimört</li><li>Looduslikud värvid</li><li>Paekivi</li><li>Põllukivi</li>
+    </ul>
+   </div>
+  </div>
+ </section>
+
+ <section id="tegevusalad" class="alt">
+  <div class="wrap">
+   <h2>Tegevusalad</h2>
+   <div class="services">
+    <div class="svc"><h3>Rekonstrueerimine ja restaureerimine</h3><p>Vanad taluhooned, tuulikud, mõisahooned ja muud ajaloolised ehitised.</p></div>
+    <div class="svc"><h3>Uusehitused ja remont</h3><p>Käsitööna valminud palkmajad, kaminad, paekivist väravad ja remonttööd.</p></div>
+    <div class="svc"><h3>Uuringud ja järelvalve</h3><p>Uuringud, konsultatsioonid ja järelvalve.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="tood">
+  <div class="wrap">
+   <h2>Tehtud tööd</h2>
+   <p class="lead">Valik objekte Hiiumaalt ja mujalt.</p>
+   <div class="works">
+<article class="work"><img src="img/r16m2gw451d7lgu9amhsypusb.jpg" width="800" height="511" alt="Orjaku mõisa kuivati" loading="lazy" decoding="async"><div class="work-b"><h3>Orjaku mõisa kuivati</h3><details><summary>Vaata lähemalt ja pilte</summary><p>Projekti autor DAGOpen OÜ, arhitekt Jaanus Rohusaar. Objekt asub Käina vallas Orjaku sadama läheduses. Vana kuivati hoone on ümber ehitatud elumajaks. Alumine korrus on puhastatud kuivati kiviahjudest. Sama kivi kasutati ära objekti vaheseinte ehituses. Ülemine korrus, kus punutud metallvõrkudel kuivatati vilja, on ümber ehitatud köök-puhketoaks. Vastavalt tellija soovile on katusesse paigaldatud aknad, millest avaneb kaunis vaade Käina lahele. Materjalidest on kasutatud vana punast tellist, paekivi ja vana ehituspuitu laepennideks.</p><div class="gal"><img src="img/o9iqo9fxlcc0vn50likk5lslf.jpg" width="700" height="447" alt="Orjaku mõisa kuivati, foto 2" loading="lazy" decoding="async"><img src="img/ojbgn1vpvt92i3cjayfd0gvyt.jpg" width="700" height="483" alt="Orjaku mõisa kuivati, foto 3" loading="lazy" decoding="async"><img src="img/ibdugd9ecgof7c71fxsrswv06.jpg" width="700" height="479" alt="Orjaku mõisa kuivati, foto 4" loading="lazy" decoding="async"><img src="img/fq6ob3lat2jjt3sc4gjs9uz0l.jpg" width="700" height="490" alt="Orjaku mõisa kuivati, foto 5" loading="lazy" decoding="async"><img src="img/4nrk45q24l44gi40n5wj758l9.jpg" width="700" height="468" alt="Orjaku mõisa kuivati, foto 6" loading="lazy" decoding="async"><img src="img/n3l4mvlwjzw08cw76hzyjq5eu.jpg" width="700" height="455" alt="Orjaku mõisa kuivati, foto 7" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/qto2hgum7rlp3yrvul87oztja.jpg" width="800" height="521" alt="Kiduspe taluhooned" loading="lazy" decoding="async"><div class="work-b"><h3>Kiduspe taluhooned</h3><details><summary>Vaata lähemalt ja pilte</summary><p>Projekti autor DAGOpen OÜ, arhitekt Jaanus Rohusaar. Kiduspe külas asuvad Tooma taluhooned. Vanast lauda- ja sepimajast jäid lammutustööde tagajärjel alles ainult sepikoja korsten ja laudahoone lõunapoolsem ots. Vana sepikoja asemele ehitati saunamaja. Laudahoone asendati elumajaga, säilitades lõunapoolse otsaseina algupärase palgi (hilisem magamistoa asukoht). Kolmas hoone ehitati garaaz-abihooneks. Kõik kolm hoonet on rajatud vanade vundamentide asukoha peale. Rekonstrueerimistööde käigus on kasutatud paekivi, graniitkivi, lubjasegu, linaõli, mesilasevaha, vanu sepisdetaile, mis kunagi valminud sama talu sepikojas. Muistset elu ei ole võimalik päriseks muuta, küll aga on õnnestunud säilitada ja parandada miljööväärtust.</p><div class="gal"><img src="img/s61vz98qmw7j9wqj6rm58lt91.jpg" width="700" height="455" alt="Kiduspe taluhooned, foto 2" loading="lazy" decoding="async"><img src="img/2lp0mu684iepob3b2swk52mio.jpg" width="700" height="455" alt="Kiduspe taluhooned, foto 3" loading="lazy" decoding="async"><img src="img/bxmddpodrzcpcoxlulys2ql1k.jpg" width="700" height="455" alt="Kiduspe taluhooned, foto 4" loading="lazy" decoding="async"><img src="img/3wkdinavqux4bd4pkztk1buqj.jpg" width="700" height="455" alt="Kiduspe taluhooned, foto 5" loading="lazy" decoding="async"><img src="img/cre9l18uhux0lgq8zn7ji6l2c.jpg" width="700" height="525" alt="Kiduspe taluhooned, foto 6" loading="lazy" decoding="async"><img src="img/hrn9pc1yyqzaed1nnfhnmts91.jpg" width="700" height="455" alt="Kiduspe taluhooned, foto 7" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/gmjok39fjstwf8pnhqle67uoy.jpg" width="701" height="480" alt="Saarnaki laiu tuulik" loading="lazy" decoding="async"><div class="work-b"><h3>Saarnaki laiu tuulik</h3><details><summary>Vaata lähemalt ja pilte</summary><p>Puittalal loetava aastaarvu 1880 järgi võib arvata tuuliku vanust. Renoveerimistööde käigus vahetati ära emapuu, tiivavõll, tiivikud, karkassiosa, välislaudis ja katus. Restaureeriti veskikivide liigutamismehhanismid, jahukolded ja rennid. Katusele paigaldati nn kaanelaudis, mis immutati linaõli ja puutõrvaga. Seinad viimistleti toonitud tärpentiniõliga.</p><div class="gal"><img src="img/qqtto2mlsssobacq2zfl05y0u.jpg" width="700" height="513" alt="Saarnaki laiu tuulik, foto 2" loading="lazy" decoding="async"><img src="img/n8egjqzvikexctpod07kh491u.jpg" width="700" height="485" alt="Saarnaki laiu tuulik, foto 3" loading="lazy" decoding="async"><img src="img/izaeivaj2y9kmmj7mrderfzcw.jpg" width="700" height="467" alt="Saarnaki laiu tuulik, foto 4" loading="lazy" decoding="async"><img src="img/2aep56m0kwgay3vvlx68bdat6.jpg" width="524" height="713" alt="Saarnaki laiu tuulik, foto 5" loading="lazy" decoding="async"><img src="img/hvmdfknbnen1nabfegfqb4e8t.jpg" width="700" height="525" alt="Saarnaki laiu tuulik, foto 6" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/nv6k7020dlpylo840z58y25ky.jpg" width="532" height="800" alt="Kassari veski" loading="lazy" decoding="async"><div class="work-b"><h3>Kassari veski</h3><details><summary>Vaata lähemalt ja pilte</summary><div class="gal"><img src="img/hvzp5hni6w2vnx56fb1l0mule.jpg" width="532" height="800" alt="Kassari veski, foto 2" loading="lazy" decoding="async"><img src="img/b82igy9fy5r2n5ywg5ro620uz.jpg" width="532" height="800" alt="Kassari veski, foto 3" loading="lazy" decoding="async"><img src="img/ttwfhtof2fqxjn406q6s6wet4.jpg" width="700" height="465" alt="Kassari veski, foto 4" loading="lazy" decoding="async"><img src="img/j43cjizgibnwonqqdmb7sz1qp.jpg" width="700" height="524" alt="Kassari veski, foto 5" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/egiykim8f9m24ihio3in9epc3.jpg" width="800" height="521" alt="Kärdla Tuletõrjehoone" loading="lazy" decoding="async"><div class="work-b"><h3>Kärdla Tuletõrjehoone</h3><details><summary>Vaata lähemalt ja pilte</summary><p>Tuletõrjemaja katuselt eemaldati vana eterniitplaat, paigaldati uus kimmikatus. Katus on immutatud kaks korda tulise linaõli ja puutõrva seguga (50% linaõli, 50% puutõrva). Rekonstrueeriti tornikatus, paigaldati uus lipuvarras ja piirdeaed.</p><div class="gal"><img src="img/mhiwp2pqcw7xesfd456pv89fq.jpg" width="700" height="477" alt="Kärdla Tuletõrjehoone, foto 2" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/mbzxk1lsn80rnqr9cy4jbiy36.jpg" width="800" height="525" alt="Palkmajad" loading="lazy" decoding="async"><div class="work-b"><h3>Palkmajad</h3><details><summary>Vaata lähemalt ja pilte</summary><p>Arvestades esivanemate aastasadade pikkusi palkhoonete ehitamise traditsioone, püüame tänapäevalgi jälgida selle töö teostamisel lihtsust, autentsust. Ka puit muutub aja jooksul väärikamaks… Seni püstitatud majad on valminud käsitööna. Arvestame raietööde ajastust, palgid langetatakse talvekuudel, kui kahanev kuu on nähtav, ida suunal. Sel viisil langetatud palgid on juba külmas veidi kuivanud, veesisaldus puidus on väiksem ja puuduvad seeneeosed. Puit püsib puhtamana kahjurputukatest. Palgid veetakse kohe objektile, kus nad lõpuks maja ehitamiseks kohapeal kooritakse ja paigaldatakse. Puidu kiire pragunemise vältimiseks säilitatakse osa koorest, et puit saaks ühtlasemalt kuivada. Hiljem, juba seinas, kooritakse palgid koorest puhtaks. Väljastpoolt immutatakse palgid Pinotex-õliga, seestpoolt sisekliima paremaks esile tõstmiseks linaõli ja vähese mesilasvaha seguga. Palgivahede tihendamiseks kasutatakse linatakku, mis võrreldes tehisvillaga (Isover) lubab seinale paremat soojapidavust ja ka vastupidavust. Tänapäeva globaliseeruvas maailmas valitseb kiire elutempo, mis raskendab ehitamist vanade ehitustavade järgi. Me püüame säilitada tänapäeval käsitsi tehtud palkmajades aastasadu tagasi püstitatud majade ehitusväärtusi. Kunagi määratleb meie rahvuskultuur ka tänapäeval loodud ehitiste väärtuse.</p><div class="gal"><img src="img/qqlbmklcknasl253kjuj8otbi.jpg" width="515" height="800" alt="Palkmajad, foto 2" loading="lazy" decoding="async"><img src="img/qg8h7balw8vq218wys5zd0fgk.jpg" width="700" height="456" alt="Palkmajad, foto 3" loading="lazy" decoding="async"><img src="img/nwbpnw8enfuy5xhxvn9zco70n.jpg" width="700" height="459" alt="Palkmajad, foto 4" loading="lazy" decoding="async"><img src="img/a58lxrcww3gjo3sflj1d5b3lj.jpg" width="700" height="459" alt="Palkmajad, foto 5" loading="lazy" decoding="async"><img src="img/bhbesmk500876nxk1yznifgji.jpg" width="700" height="455" alt="Palkmajad, foto 6" loading="lazy" decoding="async"><img src="img/5soxrrnf5elwouzb0r1i7f1a4.jpg" width="700" height="454" alt="Palkmajad, foto 7" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/779cye0j2xhpg7r6dqljcn3n3.jpg" width="800" height="600" alt="Soonlepa puhkemaja" loading="lazy" decoding="async"><div class="work-b"><h3>Soonlepa puhkemaja</h3><details><summary>Vaata lähemalt ja pilte</summary><p>Projekti autor DAGOpen OÜ, arhitekt Jaanus Rohusaar. Hoone asub Pühalepa vallas Soonlepa mõisahoonete vahetus läheduses. Soonlepa puhkemaja on rajatud nn maakivist vundamendile. Seinteks on kasutatud teisaldatud hoone palke.</p><div class="gal"><img src="img/pa4rjdwrrj9rn91lvbibd1rwj.jpg" width="700" height="441" alt="Soonlepa puhkemaja, foto 2" loading="lazy" decoding="async"><img src="img/e4a8ew85blcuffzlwg5h2ietj.jpg" width="700" height="433" alt="Soonlepa puhkemaja, foto 3" loading="lazy" decoding="async"><img src="img/pa1a8ab74tmp7eq6zlir52uy4.jpg" width="700" height="525" alt="Soonlepa puhkemaja, foto 4" loading="lazy" decoding="async"><img src="img/nwe9s0flc2sjtvil0mh3o6xok.jpg" width="700" height="482" alt="Soonlepa puhkemaja, foto 5" loading="lazy" decoding="async"><img src="img/f0ghfk2ygwqcqun9ltwvtv74m.jpg" width="700" height="430" alt="Soonlepa puhkemaja, foto 6" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/xt7biyodxdvddzi7nrj2dgfd9.jpg" width="800" height="450" alt="Ühe maja renoveerimise lugu" loading="lazy" decoding="async"><div class="work-b"><h3>Ühe maja renoveerimise lugu</h3><details><summary>Vaata lähemalt ja pilte</summary><div class="gal"><img src="img/7ens35ao1jxugi98nzj0wqz0a.jpg" width="700" height="393" alt="Ühe maja renoveerimise lugu, foto 2" loading="lazy" decoding="async"><img src="img/v3w4oev5unj2nqklpk70w7dao.jpg" width="700" height="393" alt="Ühe maja renoveerimise lugu, foto 3" loading="lazy" decoding="async"><img src="img/p6psr2ug84yjl13vqklif2b3t.jpg" width="700" height="393" alt="Ühe maja renoveerimise lugu, foto 4" loading="lazy" decoding="async"><img src="img/j8emafqutwp3vs5duyuotauw7.jpg" width="700" height="393" alt="Ühe maja renoveerimise lugu, foto 5" loading="lazy" decoding="async"><img src="img/kmr3ohje3ypmmlisgpbr6rcru.jpg" width="700" height="393" alt="Ühe maja renoveerimise lugu, foto 6" loading="lazy" decoding="async"><img src="img/e8k5d2obast3wqd9so210x0e4.jpg" width="700" height="393" alt="Ühe maja renoveerimise lugu, foto 7" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/66owja4llhk69dmm9kcjic8e7.jpg" width="800" height="532" alt="Paekivist värav" loading="lazy" decoding="async"><div class="work-b"><h3>Paekivist värav</h3><details><summary>Vaata lähemalt ja pilte</summary><div class="gal"><img src="img/vy4b5b97mu0l6q4phgvuom6x0.jpg" width="700" height="465" alt="Paekivist värav, foto 2" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/8xir9d5w3zsw3c674kv47pwhd.jpg" width="450" height="800" alt="Kaminad" loading="lazy" decoding="async"><div class="work-b"><h3>Kaminad</h3><details><summary>Vaata lähemalt ja pilte</summary><div class="gal"><img src="img/wva2k04m227h494gjqza12us8.jpg" width="450" height="800" alt="Kaminad, foto 2" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/0s7ott7smbwa2hwojjx635wup.jpg" width="800" height="600" alt="Villa Hispaanias" loading="lazy" decoding="async"><div class="work-b"><h3>Villa Hispaanias</h3><details><summary>Vaata lähemalt ja pilte</summary><p>1968. aastal Hispaanias Costa del Soli rannikul valminud villa renoveerimine ja remonttööd. Peatöövõtja oli OÜ Ungru Restauraator.</p><div class="gal"><img src="img/jljx8pf3l97po100x9jcjn82x.jpg" width="700" height="525" alt="Villa Hispaanias, foto 2" loading="lazy" decoding="async"><img src="img/6kgm4ycgbvh0688lbh6gygopo.jpg" width="600" height="800" alt="Villa Hispaanias, foto 3" loading="lazy" decoding="async"><img src="img/cpgtqegkmrmuaqc11hhmbd199.jpg" width="600" height="800" alt="Villa Hispaanias, foto 4" loading="lazy" decoding="async"><img src="img/5c8tobhuurqazmf3n0u65v1dv.jpg" width="700" height="500" alt="Villa Hispaanias, foto 5" loading="lazy" decoding="async"><img src="img/hvt4klwyt30sdfulmuo5acj0e.jpg" width="600" height="800" alt="Villa Hispaanias, foto 6" loading="lazy" decoding="async"><img src="img/6qyh5jicg3xh4eixl0ep57lti.jpg" width="700" height="525" alt="Villa Hispaanias, foto 7" loading="lazy" decoding="async"></div></details></div></article>
+<article class="work"><img src="img/sboau259l8ofgn3f0u5j7f0kd.jpg" width="800" height="600" alt="Tallinna Kunstihoone" loading="lazy" decoding="async"><div class="work-b"><h3>Tallinna Kunstihoone</h3><details><summary>Vaata lähemalt</summary><p>Remonttööd Tallinna Kunstihoones.</p><div class="gal"></div></details></div></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="kontakt" class="alt">
+  <div class="wrap">
+   <h2>Kontakt</h2>
+   <div class="contact">
+    <div class="panel">
+     <h3>OÜ Ungru Restauraator</h3>
+     <p>Kalle Rosenberg</p>
+     <p class="big"><a href="tel:+3725176135">+372 517 6135</a></p>
+     <p><a href="tel:+3724567788">+372 456 7788</a></p>
+     <p><a href="mailto:kalle@ungru.ee">kalle@ungru.ee</a></p>
+    </div>
+    <div class="panel">
+     <h3>Aadress</h3>
+     <p>Uus 6-11<br>92302 Suuremõisa<br>Pühalepa vald, Hiiumaa</p>
+     <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Uus+6%2C+Suurem%C3%B5isa%2C+Hiiumaa" target="_blank" rel="noopener">Ava kaardil</a></p>
+    </div>
+   </div>
+   <p class="partner">Koostööpartner: <strong>Haapsalu Paekivi AS</strong>, Kadaka tee 84 E, Tallinn, <a href="tel:+3726501840">+372 650 1840</a>, <a href="mailto:info@ungru.ee">info@ungru.ee</a>, <a href="http://www.haapsalupaekivi.ee" target="_blank" rel="noopener">haapsalupaekivi.ee</a></p>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>© OÜ Ungru Restauraator</span>
+  <span><a href="tel:+3725176135">+372 517 6135</a> · <a href="mailto:kalle@ungru.ee">kalle@ungru.ee</a></span>
+ </div>
+</footer>
+
+<nav class="mobile-call" aria-label="Kiirkontakt">
+ <a href="tel:+3725176135">Helista</a>
+ <a href="mailto:kalle@ungru.ee">Kirjuta</a>
+</nav>
+</body>
+</html>
